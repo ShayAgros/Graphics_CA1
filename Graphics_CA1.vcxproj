@@ -30,7 +30,7 @@
     <UseDebugLibraries>true</UseDebugLibraries>
     <PlatformToolset>v141</PlatformToolset>
     <CharacterSet>MultiByte</CharacterSet>
-    <UseOfMfc>Static</UseOfMfc>
+    <UseOfMfc>Dynamic</UseOfMfc>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
     <ConfigurationType>Application</ConfigurationType>
@@ -120,9 +120,10 @@
   </ItemDefinitionGroup>
   <ItemGroup>
     <ClCompile Include="main.cpp" />
-    <ClCompile Include="MY_WIN.CPP" />
+    <ClCompile Include="MyParamDialog.cpp" />
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="MyParamDialog.h" />
     <ClInclude Include="my_win.h" />
     <ClInclude Include="resource.h" />
   </ItemGroup>
